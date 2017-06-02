@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Navbar from './Navbar';
 import Source from './Source';
 
 class App extends Component {
@@ -14,7 +15,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Source site={this.state.site} />
+        <div>
+          <Navbar />
+        </div>
+
+        <div className="source">
+          <Source site={this.state.site} />
+        </div>
       </div>
     );
   }
