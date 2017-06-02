@@ -6,6 +6,11 @@ class Navbar extends Component {
 
   }
 
+  render() {
+    return(
+      <nav>hello</nav>
+    )
+  }
 
 
 
