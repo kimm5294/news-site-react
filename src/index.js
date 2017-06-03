@@ -7,4 +7,3 @@ import Navbar from './Navbar';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
-ReactDOM.render(<Navbar />, document.getElementById('nav'));
