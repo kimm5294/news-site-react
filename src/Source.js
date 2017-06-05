@@ -11,6 +11,7 @@ class Source extends Component {
   }
 
   componentWillMount() {
+    console.log(this.state)
     fetch(this.props.site)
     .then((r) => r.json())
     .then((data) => {
@@ -19,8 +20,19 @@ class Source extends Component {
     })
   }
 
+  componentWillReceiveProps(nextProps) {
+    console.log(nextProps)
+    fetch(nextProps.site)
+    .then((r) => r.json())
+    .then((data) => {
+      this.setState((prevState, props) => {return {source: data};
+      });
+    })
+  }
+
+
   render() {
-    console.log(this.state)
+    console.log(this.state.source)
     return (
       <div>
         {this.state.source.map((article, i) =>
