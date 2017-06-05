@@ -1,21 +1,49 @@
 import React, { Component } from 'react';
 
 class Article extends Component {
+
+  constructor(args) {
+    super(args);
+
+    this.author = this.author.bind(this)
+    this.writtenOn = this.writtenOn.bind(this)
+
+  }
+
+  author(article) {
+    if (article.author) {
+      return article.author
+    } else {
+      return "Anonymous"
+    }
+  }
+
+  writtenOn(article) {
+    if(article.publishedAt) {
+      return `on ${new Date(article.publishedAt)}`
+    } else {
+      return ""
+    }
+  }
+
   render() {
     return (
-      <div>
-        <h3>{this.props.article.title}</h3>
-        <p>
-          {this.props.article.description}
-        </p>
+      <div className="media table">
+        <div className="media-left media-middle">
+          <a>
+            <img className="media-object img-rounded" height="200" width="200" src={this.props.article.urlToImage} alt="Image Unavailable"/>
+          </a>
+        </div>
 
-        <ul>
-          {this.props.article.author
-            ? <li>{this.props.article.author}</li>
-            : <li>Anonymous</li>
-          }
-          <li><a href={this.props.article.url}>Read more here</a></li>
-        </ul>
+        <div className="media-body">
+          <a href={this.props.article.url}>
+            <h4 className="media-heading">{this.props.article.title}</h4>
+          </a>
+          {this.props.article.description}
+          <p>
+            Written by {this.author(this.props.article)} {this.writtenOn(this.props.article)}
+          </p>
+        </div>
       </div>
     )
   }
