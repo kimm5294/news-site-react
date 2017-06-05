@@ -13,18 +13,26 @@ class Navbar extends Component {
 
   render() {
     return(
-      <nav>
-        <ul className="nav nav-tabs">
-          <li role="presentation"><a href="#espn" onClick={this.props.espnCallback}>
-            ESPN
-          </a></li>
-          <li role="presentation"><a href="#hacker" onClick={this.props.hackerCallback}>
-            Hacker News
-          </a></li>
-          <li role="presentation"><a href="#natgeo" onClick={this.props.natgeoCallback}>
-            National Geographic
-          </a></li>
-        </ul>
+
+
+      <nav className="navbar navbar-default">
+        <div className="container-fluid">
+
+          <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul className="nav navbar-nav">
+
+              <li><a href="#espn" onClick={this.props.espnCallback}>
+                ESPN
+              </a></li>
+              <li><a href="#hacker" onClick={this.props.hackerCallback}>
+                Hacker News
+              </a></li>
+              <li><a href="#natgeo" onClick={this.props.natgeoCallback}>
+                National Geographic
+              </a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     )
   }
