@@ -19,7 +19,11 @@ class Navbar extends Component {
         </a>
         |
         <a href="#hacker" onClick={this.props.hackerCallback}>
-          Hacker
+          Hacker News
+        </a>
+        |
+        <a href="#natgeo" onClick={this.props.natgeoCallback}>
+          National Geographic
         </a>
       </nav>
     )
