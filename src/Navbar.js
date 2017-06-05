@@ -18,7 +18,7 @@ class Navbar extends Component {
           <li role="presentation"><a href="#espn" onClick={this.props.espnCallback}>
             ESPN
           </a></li>
-          <li role="presentation" class="active"><a href="#hacker" onClick={this.props.hackerCallback}>
+          <li role="presentation"><a href="#hacker" onClick={this.props.hackerCallback}>
             Hacker News
           </a></li>
           <li role="presentation"><a href="#natgeo" onClick={this.props.natgeoCallback}>

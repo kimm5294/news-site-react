@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Article from './Article';
+import './Source.css';
 
 class Source extends Component {
 
@@ -31,7 +32,7 @@ class Source extends Component {
 
   render() {
     return (
-      <div>
+      <div id="articles-container" className="container-fluid table-responsive">
         {this.state.source.map((article, i) =>
           <Article key={i} article={article} />
         )}
