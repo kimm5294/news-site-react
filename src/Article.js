@@ -31,7 +31,7 @@ class Article extends Component {
       <div className="media table">
         <div className="media-left media-middle">
           <a>
-            <img className="media-object img-rounded" height="200" width="200" src={this.props.article.urlToImage} alt="Image Unavailable"/>
+            <img className="media-object img-rounded" height="171" width="180" src={this.props.article.urlToImage} alt="No Image Available"/>
           </a>
         </div>
 
