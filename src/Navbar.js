@@ -30,6 +30,15 @@ class Navbar extends Component {
               <li><a href="#natgeo" onClick={this.props.natgeoCallback}>
                 National Geographic
               </a></li>
+              <li><a href="#cnn" onClick={this.props.cnnCallback}>
+                CNN
+              </a></li>
+              <li><a href="#bbc" onClick={this.props.bbcCallback}>
+                BBC News
+              </a></li>
+              <li><a href="#wsj" onClick={this.props.wsjCallback}>
+                The Wall Street Journal
+              </a></li>
             </ul>
           </div>
         </div>
