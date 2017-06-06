@@ -31,6 +31,24 @@ class App extends Component {
     });
   }
 
+  cnn() {
+    this.setState((props, prevState) =>
+      {return {site: "http://localhost:8080/articles/cnn", siteName: "CNN"}
+    });
+  }
+
+  bbc() {
+    this.setState((props, prevState) =>
+      {return {site: "http://localhost:8080/articles/bbc", siteName: "BBC News"}
+    });
+  }
+
+  wsj() {
+    this.setState((props, prevState) =>
+      {return {site: "http://localhost:8080/articles/wsj", siteName: "The Wall Street Journal"}
+    });
+  }
+
 
   render() {
     return (
@@ -41,7 +59,7 @@ class App extends Component {
         <div className="row">
           <div className="col-lg-2">
             <div className="App">
-              <header><Navbar espnCallback={this.espn.bind(this)} hackerCallback={this.hacker.bind(this)} natgeoCallback={this.natgeo.bind(this)} /></header>
+              <header><Navbar espnCallback={this.espn.bind(this)} hackerCallback={this.hacker.bind(this)} natgeoCallback={this.natgeo.bind(this)} cnnCallback={this.cnn.bind(this)} bbcCallback={this.bbc.bind(this)} wsjCallback={this.wsj.bind(this)} /></header>
             </div>
           </div>
           <div className="col-lg-10">
