@@ -18,25 +18,25 @@ class Navbar extends Component {
       <nav className="navbar navbar-default">
         <div className="container-fluid">
 
-          <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul className="nav navbar-nav">
+          <div>
+            <ul className="nav flex-column">
 
-              <li><a href="#espn" onClick={this.props.espnCallback}>
+              <li className="nav-item"><a className="nav-link" href="#espn" onClick={this.props.espnCallback}>
                 ESPN
               </a></li>
-              <li><a href="#hacker" onClick={this.props.hackerCallback}>
+              <li className="nav-item"><a className="nav-link" href="#hacker" onClick={this.props.hackerCallback}>
                 Hacker News
               </a></li>
-              <li><a href="#natgeo" onClick={this.props.natgeoCallback}>
+              <li className="nav-item"><a className="nav-link" href="#natgeo" onClick={this.props.natgeoCallback}>
                 National Geographic
               </a></li>
-              <li><a href="#cnn" onClick={this.props.cnnCallback}>
+              <li className="nav-item"><a className="nav-link" href="#cnn" onClick={this.props.cnnCallback}>
                 CNN
               </a></li>
-              <li><a href="#bbc" onClick={this.props.bbcCallback}>
+              <li className="nav-item"><a className="nav-link" href="#bbc" onClick={this.props.bbcCallback}>
                 BBC News
               </a></li>
-              <li><a href="#wsj" onClick={this.props.wsjCallback}>
+              <li className="nav-item"><a className="nav-link" href="#wsj" onClick={this.props.wsjCallback}>
                 The Wall Street Journal
               </a></li>
             </ul>
