@@ -54,7 +54,7 @@ class App extends Component {
     return (
       <div className="container-fluid">
         <div className="page-header">
-          <h1 id="source-header">{this.state.siteName}</h1>
+          <h1 id="source-header">Extra, Extra! <small>{this.state.siteName}</small></h1>
         </div>
         <div className="row">
           <div className="col-lg-2">
