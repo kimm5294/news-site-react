@@ -8,44 +8,44 @@ class App extends Component {
   constructor(args) {
     super(args);
     this.state = {
-      site: "http://localhost:8080/articles/hacker",
+      site: "https://extra-extra-rails.herokuapp.com/articles/hacker",
       siteName: "Hacker News"
     }
   }
 
   espn() {
     this.setState((props, prevState) =>
-      {return {site: "http://localhost:8080/articles/espn", siteName: "ESPN"}
+      {return {site: "https://extra-extra-rails.herokuapp.com/articles/espn", siteName: "ESPN"}
     });
   }
 
   hacker() {
     this.setState((props, prevState) =>
-      {return {site: "http://localhost:8080/articles/hacker", siteName: "Hacker News"}
+      {return {site: "https://extra-extra-rails.herokuapp.com/articles/hacker", siteName: "Hacker News"}
     });
   }
 
   natgeo() {
     this.setState((props, prevState) =>
-      {return {site: "http://localhost:8080/articles/natgeo", siteName: "National Geographic"}
+      {return {site: "https://extra-extra-rails.herokuapp.com/articles/natgeo", siteName: "National Geographic"}
     });
   }
 
   cnn() {
     this.setState((props, prevState) =>
-      {return {site: "http://localhost:8080/articles/cnn", siteName: "CNN"}
+      {return {site: "https://extra-extra-rails.herokuapp.com/articles/cnn", siteName: "CNN"}
     });
   }
 
   bbc() {
     this.setState((props, prevState) =>
-      {return {site: "http://localhost:8080/articles/bbc", siteName: "BBC News"}
+      {return {site: "https://extra-extra-rails.herokuapp.com/articles/bbc", siteName: "BBC News"}
     });
   }
 
   wsj() {
     this.setState((props, prevState) =>
-      {return {site: "http://localhost:8080/articles/wsj", siteName: "The Wall Street Journal"}
+      {return {site: "https://extra-extra-rails.herokuapp.com/articles/wsj", siteName: "The Wall Street Journal"}
     });
   }
 
