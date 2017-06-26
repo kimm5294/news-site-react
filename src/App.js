@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Source from './Source';
 import Navbar from './Navbar';
+import logo from './extra.gif';
 
 class App extends Component {
 
@@ -54,7 +55,7 @@ class App extends Component {
     return (
       <div className="container-fluid">
         <div className="page-header">
-          <h1 id="source-header">Extra, Extra! <small>{this.state.siteName}</small></h1>
+          <h1 id="source-header"><img src={logo} height="200" width="200"/>Extra, Extra! <br/> <small>{this.state.siteName}</small></h1>
         </div>
         <div className="row">
           <div className="col-lg-2">
